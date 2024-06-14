@@ -22,7 +22,18 @@ def listar_trabajador():
             print(f"NOMBRE: {t[0]}\nCARGO: {t[1]}\nBRUTO: {t[2]}\nSalud: {t[3]}\nAFP: {t[4]}\nLIQUIDO: {t[5]} ")
 
 def exportar_archivo():
-    pass
+    if len(trabajadores)==0:
+        print("LISTA VACÍA!")
+
+    else:
+        cargo = int(input("Ingrese cargo para planilla (1: CEO, 2: DESARROLLADOR, 3: ANALISTA)"))
+        if cargo==1:
+            with open("todos_los_trabajadores.txt","w") as archivo: 
+                for t in trabajadores:
+                    archivo.writeprint(f"NOMBRE: {t[0]}\nCARGO: {t[1]}\nBRUTO: {t[2]}\nSalud: {t[3]}\nAFP: {t[4]}\nLIQUIDO: {t[5]} ")
+
+
+
 
 def salir():
     print("GRACIAS ADIOS!")
