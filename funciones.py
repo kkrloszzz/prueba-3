@@ -14,7 +14,12 @@ def registrar_trabajador():
 
 
 def listar_trabajador():
-    pass
+    if len(trabajadores) ==0:
+        print("LISTA VACIA! REGISTRE UN TRABAJADOR EN LA OPCIÓN 1")
+    else:
+        print("\tLISTA DE TRABAJADORES")
+        for t in trabajadores
+            print(f"NOMBRE: {t[0]}\nCARGO: {t[1]}\nBRUTO: {t[2]}\nSalud: {t[3]}\nAFP: {t[4]}\nLIQUIDO: {t[5]} ")
 
 def exportar_archivo():
     pass

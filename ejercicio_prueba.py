@@ -15,12 +15,12 @@ while True:
 
 
     elif opc ==2:
-        pass
+        listar_trabajador()
     
     
     
     elif opc ==3:
-        pass
+        exportar_archivo()
     
     
     else:
